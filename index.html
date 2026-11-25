@@ -9,6 +9,7 @@
 </head>
 <body>
   <main class="container">
+
     <header>
       <h1>STIV<span>.</span></h1>
       <p>YOUR FOOTBALL. YOUR PROGRESS.</p>
@@ -20,26 +21,67 @@
     </section>
 
     <section class="auth">
+
       <h2>Войти в STIV</h2>
+
       <form id="login-form">
         <input id="email" type="email" placeholder="Email" required>
         <input id="password" type="password" placeholder="Пароль" required>
         <button type="submit">Войти</button>
       </form>
 
-      <p>Нет аккаунта?</p>
+      <p>Нет аккаунта? Создай профиль футболиста!</p>
 
       <form id="register-form">
-        <input id="username" type="text" placeholder="Твой ник" required>
-        <input id="reg-email" type="email" placeholder="Email" required>
-        <input id="reg-password" type="password" placeholder="Пароль (минимум 6 символов)" minlength="6" required>
-        <button type="submit">Создать аккаунт</button>
+
+        <h2>Твой футбольный профиль</h2>
+
+        <input id="username" type="text"
+          placeholder="Твой ник" required>
+
+        <input id="reg-email" type="email"
+          placeholder="Email" required>
+
+        <input id="reg-password" type="password"
+          placeholder="Пароль (минимум 6 символов)"
+          minlength="6" required>
+
+        <input id="age" type="number"
+          placeholder="Возраст" min="5" max="100" required>
+
+        <input id="height" type="number"
+          placeholder="Рост (см)" min="50" max="250" required>
+
+        <input id="weight" type="number"
+          placeholder="Вес (кг)" min="10" max="300"
+          step="0.1" required>
+
+        <select id="level" required>
+          <option value="">Уровень футбола</option>
+          <option value="beginner">Начинающий</option>
+          <option value="amateur">Любитель</option>
+          <option value="advanced">Продвинутый</option>
+          <option value="professional">Профессионал</option>
+        </select>
+
+        <select id="goal" required>
+          <option value="">Главная цель</option>
+          <option value="speed">Скорость</option>
+          <option value="technique">Техника</option>
+          <option value="physical">Физическая подготовка</option>
+          <option value="universal">Универсальный футболист</option>
+        </select>
+
+        <button type="submit">Создать профиль</button>
+
       </form>
 
       <p id="message"></p>
+
     </section>
 
     <footer>STIV © 2026</footer>
+
   </main>
 
   <script type="module" src="js/app.js"></script>
