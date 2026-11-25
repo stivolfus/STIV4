@@ -4,7 +4,7 @@ import { createClient } from
 
 const SUPABASE_URL = "https://tbxjsmbafuoknuchmncx.supabase.co";
 
-const SUPABASE_KEY = "ТВОЙ_ТЕКУЩИЙ_PUBLISHABLE_KEY";
+const SUPABASE_KEY = "sb_publishable_QwbXHGkfhqF9K0kg0BgGug_VolsnjgN";
 
 export const supabase = createClient(
   SUPABASE_URL,
