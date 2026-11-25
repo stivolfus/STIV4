@@ -114,3 +114,31 @@ footer {
   margin-top: 35px;
   font-size: 12px;
 }
+
+/* STIV — Dark Purple Select */
+
+select {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #60458b;
+  border-radius: 10px;
+  background-color: #201c26;
+  color: #ffffff;
+  font-size: 15px;
+  outline: none;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  transition: 0.25s;
+}
+
+select:focus {
+  border-color: #a879ff;
+  box-shadow: 0 0 10px #9461e855;
+}
+
+select option {
+  background-color: #201c26;
+  color: #ffffff;
+  padding: 12px;
+}
