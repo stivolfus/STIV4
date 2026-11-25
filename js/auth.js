@@ -1,8 +1,8 @@
 
 import { supabase } from "./supabase.js";
 
-// Регистрация
-export async function register(email, password, username) {
+// Регистрация игрока
+export async function register(email, password, username, profile) {
   const { data, error } = await supabase.auth.signUp({
     email,
     password
@@ -15,7 +15,12 @@ export async function register(email, password, username) {
       .from("profiles")
       .insert({
         id: data.user.id,
-        username
+        username,
+        age: profile.age,
+        height: profile.height,
+        weight: profile.weight,
+        level: profile.level,
+        goal: profile.goal
       });
 
     if (profileError) throw profileError;
