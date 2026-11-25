@@ -1,0 +1,116 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #09080d;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+}
+
+.container {
+  width: 90%;
+  max-width: 650px;
+  margin: auto;
+  padding: 35px 0;
+}
+
+header {
+  margin-bottom: 45px;
+}
+
+header h1 {
+  font-size: 48px;
+  letter-spacing: 5px;
+  font-weight: 900;
+}
+
+header h1 span {
+  color: #a879ff;
+}
+
+header p {
+  color: #9b8ba9;
+  font-size: 11px;
+  letter-spacing: 3px;
+  margin-top: 5px;
+}
+
+.welcome {
+  background: linear-gradient(135deg, #211433, #100e17);
+  border: 1px solid #49316b;
+  border-radius: 20px;
+  padding: 30px;
+  margin-bottom: 25px;
+}
+
+.welcome h2 {
+  font-size: 27px;
+  margin-bottom: 12px;
+}
+
+.welcome p {
+  color: #c1b3d4;
+}
+
+.auth {
+  background: #141219;
+  border: 1px solid #302638;
+  padding: 25px;
+  border-radius: 20px;
+}
+
+.auth h2 {
+  margin-bottom: 20px;
+}
+
+.auth form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 15px;
+  border: 1px solid #40354b;
+  border-radius: 10px;
+  background: #201c26;
+  color: white;
+  font-size: 15px;
+}
+
+button {
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  background: #9461e8;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #aa80f4;
+}
+
+.auth p {
+  color: #b9a9c8;
+  margin: 15px 0;
+}
+
+#message {
+  color: #c7a5ff;
+}
+
+footer {
+  text-align: center;
+  color: #706879;
+  margin-top: 35px;
+  font-size: 12px;
+}
